@@ -1,0 +1,33 @@
+{% include 'announcement-bar' %}
+
+{% schema %}
+  {
+    "name": "Announcement Bar",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Section Layout Mode",
+        "default": "full",
+        "options": [
+          { "value": "boxed", "label": "Boxed" },
+          { "value": "full", "label": "Wide" }
+        ]
+      } 
+    ],
+    "blocks": [ 
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type":"richtext",
+            "id":"text",
+            "label":"Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
