@@ -1,0 +1,7 @@
+.product-grid-section .block-type-product-half-width {
+  display: inline-flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 0px 15px 0px 0px;
+  padding: 20px 20px 20px 20px;
+}
