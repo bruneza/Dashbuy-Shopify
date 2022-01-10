@@ -16,6 +16,12 @@
       "default": "Products Grid"
     },
     {
+      "id": "cssclass",
+      "type": "text",
+      "label": "Extra CSS Class",
+      "default": "dashbuy-section"
+    },
+    {
       "type": "header",
       "content": "Layout"
     },
@@ -51,7 +57,7 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Newarrivals"
+      "default": "New arrivals"
     },
     {
       "type": "text",
@@ -143,7 +149,33 @@
       "id": "paging",
       "label": "Show Bullet",
       "default": false
-    }
+    },
+    {
+          "type": "header",
+          "content": "Block Background"
+        },
+        {
+          "type": "select",
+          "id": "section_bg_style",
+          "label": "Background style",
+          "options": [
+            { "value": "color", "label": "Background color" },
+            { "value": "image", "label": "Background image" }
+          ],
+          "default": "color"
+        },
+        {
+          "type": "color",
+          "id": "section_bg_color",
+          "label": "Background color",
+          "default": "#ffffff"
+        },
+        {
+          "id": "section_bg_image",
+          "type": "image_picker",
+          "label": "Background image",
+          "info": "Default size is 1920x980 pixels"
+        }
   ],
   "blocks": [
     {
@@ -167,6 +199,16 @@
       "type": "product-half-width",
       "name": "Product - half width",
       "settings": [
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+        "type": "text",
+        "id": "block-heading",
+        "label": "Heading",
+        "default": "New Block"
+        },
         {
           "type": "header",
           "content": "Block Product"

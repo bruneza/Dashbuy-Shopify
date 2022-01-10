@@ -45,7 +45,7 @@
 
   <link rel="preload" href="{{'header-footer.min.css' | asset_url }}" as="style">
   <link rel="preload" href="{{'global.min.css' | asset_url }}" as="style">
-  <link rel="preload" href="{{'bru-style.css' | asset_url }}" as="style">
+  
   {% if template == 'index' %}
   <link rel="preload" href="{{'themes.min.css' | asset_url }}" as="style" >
   {% else %}
@@ -64,12 +64,13 @@
   <link rel="preload" href="{{'bg-dark.min.css' | asset_url }}" as="style" >
   {%- endif -%}
 
+  <link rel="preload" href="{{'bru-style.css' | asset_url }}" as="style">
+
   <!-- header-css-file  ================================================== -->
   
   <link href="{{ 'vendor.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
   <link href="{{ 'header-footer.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
   <link href="{{ 'global.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
-  <link href="{{ 'bru-style.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
   
   {% if template == 'index' %}
   <link href="{{ 'themes.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
@@ -91,7 +92,8 @@
   {%- if settings.dark_version -%}
   <link href="{{ 'bg-dark.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
   {%- endif -%}
-
+  <link href="{{ 'bru-style.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+  
   {% include 'theme-font' %}
 
   <script crossorigin="anonymous" async src="{{ 'lazysizes.min.js' | asset_url }}"></script>

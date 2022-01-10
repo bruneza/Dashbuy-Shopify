@@ -1,9 +1,14 @@
 {%- assign _heading = section.settings.heading -%}
+{%- assign _myblockheading = block.settings.block-heading -%}
 {%- assign _subheading = section.settings.subheading -%}
 
 {% unless _heading == blank %}
     <div class="title-wrapper {% if _deal_section == '2' %}title-wrapper-deal{% endif %}">
+      {% if block.type == 'product-half-width'  %}
+      <h3>{{ _myblockheading }}</h3>
+      {% else %}
       <h3>{{ _heading }}</h3>
+      {% endif %}
 
       {% if block.type == 'product-deal'  %}
         {%- assign _position = block.settings.position -%}

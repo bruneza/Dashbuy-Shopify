@@ -1,7 +1,7 @@
 {% include 'products-grid-config' %}
 
-<div id="product-grid-{{ section.id }}" class="product-grid-section{% if _hide_mobile %} d-none d-md-block{% endif %} layout-{{_layout }}" data-section-type="product-grid" data-section-id="{{ section.id }}">
-    <div class="product-grid-inner{% unless _subheading == blank %} subheading-true fix-subheading-{{ _fix_subheading_position }}{% endunless %} {% if _type == 'carousel' %}navigator-position-{{ _navigator_position }}{% endif %}" data-type="{{ _type }}">
+<div id="product-grid-{{ section.id }}" class="product-grid-section{% if _hide_mobile %} d-none d-md-block{% endif %} layout-{{_layout }}" data-section-type="product-grid" data-section-id="{{ section.id }}" {{ section_background_section | strip }} >
+    <div class="product-grid-inner{% unless _subheading == blank %} subheading-true fix-subheading-{{ _fix_subheading_position }}{% endunless %} {% if _type == 'carousel' %}navigator-position-{{ _navigator_position }}{% endif %} {% unless _css_class == blank %} {{ _css_class }} {% endunless %}" data-type="{{ _type }}">
       
       {% if section.blocks.size > 0 %}
         {% for block in section.blocks %}

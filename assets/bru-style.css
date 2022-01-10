@@ -1,7 +1,30 @@
+.dashbuy-section-half{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  max-width: 95%;
+  margin: auto;
+  padding: 60px 0;
+}
 .product-grid-section .block-type-product-half-width {
-  display: inline-flex;
-  flex-direction: column;
-  width: 48%;
-  margin: 0px 15px 0px 0px;
-  padding: 20px 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
+  grid-column: span 6 / span 6;
+} 
+.product-grid-section .block-type-product-half-width:first-of-type{
+  margin-right: 15px;
+}
+.product-grid-section .block-type-product-half-width:last-of-type{
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+ .product-grid-section .block-type-product-half-width .title-wrapper {
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+  }
+}
+@media (min-width: 768px) {
+  .product-grid-section .block-type-product-half-width .wrap-product-slider {
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+  }
 }

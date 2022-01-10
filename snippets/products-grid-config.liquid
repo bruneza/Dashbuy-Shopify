@@ -3,6 +3,11 @@
 {%- assign _layout = section.settings.layout -%}
 {%- assign _type = section.settings.type -%}
 {%- assign _padding = section.settings.padding_section -%}
+{%- assign _css_class = section.settings.cssclass -%}
+
+{%- assign _section_bg_style = section.settings.section_bg_style -%}
+{%- assign _section_bg_color = section.settings.section_bg_color -%}
+{%- assign _section_bg_image = section.settings.section_bg_image -%}
 
 {%- assign _limit = section.settings.limited -%}
 {%- assign _item_per_row = section.settings.item_per_row -%}
@@ -59,6 +64,16 @@
   {% else %}
     {%- assign _mobile_class = "col-sm-4" -%}
 {% endcase %}
+
+{% capture section_background_section %}
+  {% if _section_bg_style == 'color' %}
+    style="background: {{ _section_bg_color }};"
+  {% else %}
+    {% unless _section_bg_image == blank %}
+        style="background: url({{ _section_bg_image | img_url: '1920x'}});"
+    {% endunless %}
+  {% endif %}
+{% endcapture %}
 
 {% capture emptyProduct %}
   {% for i in (1.._item_per_row)  %}
