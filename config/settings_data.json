@@ -1670,16 +1670,6 @@
           "layout": "full"
         }
       },
-      "1558341502241": {
-        "type": "section-seperator",
-        "settings": {
-          "title": "Separator",
-          "hide_mobile": false,
-          "margin_top": true,
-          "margin_bot": true,
-          "bg_color": "#ffffff"
-        }
-      },
       "1583317122999": {
         "type": "section-products-grid",
         "blocks": {
@@ -1696,6 +1686,7 @@
         ],
         "settings": {
           "title": "Products Grid",
+          "cssclass": "dashbuy-section",
           "hide_mobile": false,
           "layout": "boxed",
           "padding_section": 0,
@@ -1709,7 +1700,9 @@
           "item_per_row_mobile": 2,
           "navigator": true,
           "navigator_position": "1",
-          "paging": true
+          "paging": true,
+          "section_bg_style": "color",
+          "section_bg_color": "#ffffff"
         }
       },
       "preview-panel": {
@@ -8299,6 +8292,7 @@
           "f3463506-08b2-4b34-b926-b87aaba66524": {
             "type": "product-half-width",
             "settings": {
+              "block-heading": "Top Selection",
               "collection": "all-in-one",
               "bg_style": "color",
               "bg_color": "#ffffff"
@@ -8307,6 +8301,7 @@
           "503832d8-5e2e-4eb6-89c8-1472fa818e0e": {
             "type": "product-half-width",
             "settings": {
+              "block-heading": "New Arrivals",
               "collection": "phones-pdas",
               "bg_style": "color",
               "bg_color": "#ffffff"
@@ -8319,6 +8314,7 @@
         ],
         "settings": {
           "title": "Products Grid",
+          "cssclass": "dashbuy-section-half",
           "hide_mobile": false,
           "layout": "boxed",
           "padding_section": 15,
@@ -8332,15 +8328,116 @@
           "item_per_row_mobile": 2,
           "navigator": true,
           "navigator_position": "1",
-          "paging": false
+          "paging": false,
+          "section_bg_style": "image",
+          "section_bg_color": "#ffffff",
+          "section_bg_image": "shopify:\/\/shop_images\/background_v2.jpg"
+        }
+      },
+      "1641773083da492945": {
+        "type": "section-products-grid",
+        "blocks": {
+          "f0ddc3dc-2ae7-4471-ae88-22f87cf0a653": {
+            "type": "product",
+            "settings": {
+              "bg_color": "#ffffff",
+              "collection": "all-in-one"
+            }
+          }
+        },
+        "block_order": [
+          "f0ddc3dc-2ae7-4471-ae88-22f87cf0a653"
+        ],
+        "settings": {
+          "title": "Products Grid",
+          "cssclass": "dashbuy-section",
+          "hide_mobile": false,
+          "layout": "boxed",
+          "padding_section": 15,
+          "heading": "More To Buy",
+          "subheading": "",
+          "fix_subheading": false,
+          "type": "row",
+          "limited": 12,
+          "item_per_row": 4,
+          "item_per_row_tablet": 4,
+          "item_per_row_mobile": 2,
+          "navigator": true,
+          "navigator_position": "2",
+          "paging": false,
+          "section_bg_style": "color",
+          "section_bg_color": "#ffffff"
+        }
+      },
+      "1641776768df31af07": {
+        "type": "section-policies",
+        "blocks": {
+          "1641776768df31af07-0": {
+            "type": "image",
+            "settings": {
+              "image_svg": "",
+              "image_size": "45x35",
+              "title": "Free Delivery",
+              "subtitle": "from $50"
+            }
+          },
+          "1641776768df31af07-1": {
+            "type": "image",
+            "settings": {
+              "image_svg": "",
+              "image_size": "45x35",
+              "title": "99% Positive",
+              "subtitle": "Feedbacks"
+            }
+          },
+          "1641776768df31af07-2": {
+            "type": "image",
+            "settings": {
+              "image_svg": "",
+              "image_size": "45x35",
+              "title": "365 days",
+              "subtitle": "for free return"
+            }
+          },
+          "1641776768df31af07-3": {
+            "type": "image",
+            "settings": {
+              "image_svg": "",
+              "image_size": "45x35",
+              "title": "Payment",
+              "subtitle": "Secure System"
+            }
+          },
+          "070dc3d7-fa21-4f57-ac6e-f5d07ab285ad": {
+            "type": "image",
+            "settings": {
+              "image_svg": "",
+              "image_size": "45x35",
+              "title": "Only Best",
+              "subtitle": "Brands"
+            }
+          }
+        },
+        "block_order": [
+          "1641776768df31af07-0",
+          "1641776768df31af07-1",
+          "1641776768df31af07-2",
+          "1641776768df31af07-3",
+          "070dc3d7-fa21-4f57-ac6e-f5d07ab285ad"
+        ],
+        "settings": {
+          "title": "Policies",
+          "hide_mobile": false,
+          "layout": "boxed"
         }
       }
     },
     "content_for_index": [
       "1554699267962",
-      "1558341502241",
+      "1641776768df31af07",
       "1641674043d93ad040",
-      "1583317122999"
+      "1583317122999",
+      "1641773083da492945"
     ]
   },
   "presets": {

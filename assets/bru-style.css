@@ -1,3 +1,4 @@
+/*** Product grid Section ***/
 .dashbuy-section-half{
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -15,7 +16,20 @@
 .product-grid-section .block-type-product-half-width:last-of-type{
   margin-left: 15px;
 }
+/*** ENd Product grid Section ***/
 
+/*** Policies Section ***/
+  .dashbuy-section-policies{
+    padding: 20px 0;
+  }
+  .dashbuy-section-policies h6, .dashbuy-section-policies svg {
+    color: var(--main-color);
+  }
+/*** End Policies Section ***/
+
+/***
+** Responsiveness
+ ***/
 @media (min-width: 768px) {
  .product-grid-section .block-type-product-half-width .title-wrapper {
     -webkit-margin-start: auto;
