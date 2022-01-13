@@ -28,6 +28,34 @@
 /*** End Policies Section ***/
 
 /***
+** ABOUT PAGE
+ ***/
+
+/*** PAGE BANNER ***/
+.banner-section{
+  margin-top: 10px;
+  padding: 120px 0;
+}
+.banner-section .bru-background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: var( --main-color );
+  opacity: 0.93;
+  transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 1;
+}
+.banner-section .bru-full-container{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 999;
+}
+
+/***
 ** Responsiveness
  ***/
 @media (min-width: 768px) {
