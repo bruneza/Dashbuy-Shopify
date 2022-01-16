@@ -24,6 +24,33 @@ h1,h2,h3,h4{
 .padding-y60 {
   padding: 60px 0;
 }
+/*** GENERAL - ALIGNMENT ***/
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.center-content-y{
+  display: flex;
+  align-items: center;
+
+}
+
+.center-content-x{
+  display: flex;
+  justify-content: center;
+}
+
+/***
+** Homepage
+ ***/
 
 /*** Product grid Section ***/
 .dashbuy-section-half{
@@ -122,6 +149,25 @@ h1,h2,h3,h4{
   color: #FFFFFF;
   text-align: left;
 }
+
+/*** About Values ***/
+.about-section-4 .about-value-heading{
+  display: flex;
+  justify-content: center;
+}
+.about-section-4 .about-value-heading h2{
+  color: var(--main-color);
+}
+.about-section-4  .about-value-list{
+  display: flex;
+  justify-content: center;
+  gap: calc(50px/2);
+  flex-direction: row;
+}
+.about-section-4  .about-value-list i{
+  color: var(--main-color);
+}
+
 
 /***
 ** Responsiveness
