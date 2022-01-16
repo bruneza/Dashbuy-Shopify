@@ -57,14 +57,14 @@
     "header_font_1": "Open+Sans:wght@300;400;600;700;800",
     "general_font_1": "Open+Sans:wght@300;400;600;700;800",
     "heading_size_1": 36,
-    "heading_size_2": 30,
-    "heading_size_3": 22,
-    "heading_size_4": 20,
+    "heading_size_2": 36,
+    "heading_size_3": 24,
+    "heading_size_4": 24,
     "heading_size_5": 18,
     "heading_size_6": 16,
-    "body_font_size": 14,
+    "body_font_size": 16,
     "top_bar_size": 13,
-    "product_title_size": 14,
+    "product_title_size": 16,
     "product_price_size": 20,
     "product_detail_title_size": 25,
     "nav_size": 14,
@@ -142,7 +142,7 @@
     "header_text_color_hover": "#334141",
     "bg_color_number_icon": "#0787ea",
     "color_number_icon": "#333e48",
-    "main_color": "#0787ea",
+    "main_color": "#1975ce",
     "body_bg": "#ffffff",
     "main_text_color": "#333e48",
     "miscellaneous_color": "#f5f5f5",
@@ -157,7 +157,7 @@
     "dropdown_bg_color": "#ffffff",
     "dropdown_item_color": "#333e48",
     "dropdown_item_color_hover": "#333e48",
-    "nav_bg_nav_link_hover": "#0787ea",
+    "nav_bg_nav_link_hover": "#1975ce",
     "menu_sale_label_color": "#ffffff",
     "menu_sale_label_bg": "#4cd964",
     "menu_new_label_color": "#ffffff",
@@ -8434,7 +8434,7 @@
             "settings": {
               "link_title": "Our Products",
               "banner_action": "shopify:\/\/collections\/all",
-              "block_css": "banner-text-item button-link btn"
+              "block_css": "banner-text-item button-link"
             }
           }
         },
@@ -8447,6 +8447,86 @@
           "title": "Page Banner",
           "cssclass": "dashbuy-section about-banner",
           "image": "shopify:\/\/shop_images\/2153965-scaled.jpg"
+        }
+      },
+      "section-custom-content": {
+        "type": "section-custom-content",
+        "blocks": {
+          "71a71acb-1926-4120-9520-fff248ffa62f": {
+            "type": "text",
+            "settings": {
+              "heading_text": "“Shop Conveniently All-time, Anywhere!”​",
+              "heading_color": "#1975ce",
+              "paragraph_text": "<p>We inspire shoppers through fashions, technologies, health, sports and entertainment, with an easy-to-use, highly secure shopping web portal, backed-up by safe e-payment platforms, and a quick delivery system.<\/p><p>Visit us today at DASHBUY head office located at CHIC Building #room E032C . This is where you will find our samples and models showroom. A place where samples are photographed in the studio and new products are loaded on the DASHBUY site daily. A place where our fashion and stockiest work around the clock to bring you online displays of NEW ARRIVALS, discount and promotional campaigns. A place where you will meet our customer service team, ready to take details of your order, respond to your emails and take your calls<\/p>",
+              "paragraph_color": "#4a4a4a",
+              "width": "59%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "1b6620a0-3651-49af-ab8b-c0dc22308b4a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/consumers-isometric-composition_1284-26384.jpg",
+              "width": "41%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "71a71acb-1926-4120-9520-fff248ffa62f",
+          "1b6620a0-3651-49af-ab8b-c0dc22308b4a"
+        ],
+        "settings": {
+          "title": "mission",
+          "cssclass": "about-section-2 margin-y60",
+          "hide_mobile": false,
+          "layout": "boxed",
+          "background_color": "",
+          "top_margin": false,
+          "bottom_margin": false,
+          "check_min_height": false,
+          "text_min_height": 300,
+          "heading": "",
+          "heading_color": "#3a3a3a"
+        }
+      },
+      "about-custom-content2": {
+        "type": "about-custom-content2",
+        "blocks": {
+          "6cccebae-bf34-4c55-9f65-938fe68553e7": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"vision-mission\">\n<div class=\"about-vision\">\n<h2>Our Vision<\/h2>\n<p>Becoming one of the biggest e-commerce platforms in Africa<\/p>\n<\/div>\n<div class=\"about-mission\">\n<h2>Our Mission<\/h2>\n<p>Delivering beyond shopper’s expectation in the safest, quickest cheapest and most reliable way.<\/p>\n<\/div>\n<\/div>",
+              "width": "59%",
+              "alignment": "center"
+            }
+          },
+          "20cec6c5-488c-46f6-b290-e7f2b4f92d1a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/kisspng-online-shopping-e-commerce-retail-product.png",
+              "width": "41%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "6cccebae-bf34-4c55-9f65-938fe68553e7",
+          "20cec6c5-488c-46f6-b290-e7f2b4f92d1a"
+        ],
+        "settings": {
+          "title": "Custom Content",
+          "cssclass": "about-section-3 padding-y60",
+          "hide_mobile": false,
+          "layout": "boxed",
+          "background_color": "#1975ce",
+          "top_margin": false,
+          "bottom_margin": false,
+          "check_min_height": false,
+          "text_min_height": 300,
+          "heading": "",
+          "heading_color": "#3a3a3a"
         }
       }
     },
