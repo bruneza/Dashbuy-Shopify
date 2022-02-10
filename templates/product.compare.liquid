@@ -62,7 +62,7 @@
 				        	{% endunless %}
 				        {% endif %}
 				        {% if variant.option3 != blank %}
-				        	{%  unless op3_value_arr contains variant.option1 %}
+				        	{%  unless op3_value_arr contains variant.option3 %}
 				        		{% assign op3_value = op3_value | append: variant.option3 | append: '[---w3---]' %}
 				        	{% endunless %}
 				        {% endif %}				        				        
@@ -93,6 +93,7 @@
 		        ,"collections":{{ product.collections | json }}
 		        ,"rating":{{ _product_rate | json }}
 		        ,"out_stock_nofication":{{ 'products.product.sold_out' | t | json }}
+				,"product_type":{{product.type | json }}
 		        }
 {% endcapture %} 
 {{ output | strip_newlines }}

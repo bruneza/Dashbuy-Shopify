@@ -407,19 +407,6 @@
           "text_box": true
         }
       },
-      "page-contact-template": {
-        "type": "page-contact-template",
-        "settings": {
-          "breadcrumb_image": "",
-          "enable_contact_form": true,
-          "contact_form_title": "Leave A Message",
-          "contact_form_description": "Maecenas dolor elit, semper a sem sed, pulvinar molestie lacus. Aliquam dignissim, elit non mattis ultrices, neque odio ultricies tellus, eu porttitor nisl ipsum eu massa.",
-          "enable_contact_map": true,
-          "contact_latlong": "51.514863, -0.133689",
-          "contact_zoom_lv": "12",
-          "contact_scroll": false
-        }
-      },
       "footer": {
         "type": "footer",
         "blocks": {
@@ -8527,6 +8514,20 @@
           "text_min_height": 300,
           "heading": "",
           "heading_color": "#3a3a3a"
+        }
+      },
+      "page-dashbuy-contact": {
+        "type": "page-dashbuy-contact",
+        "settings": {
+          "enable_contact_form": true,
+          "contact_form_title": "Get in touch",
+          "contact_form_description": "If you need any help, please contact us or send us an email",
+          "enable_contact_map": true,
+          "contact_map_location": "Mic Building",
+          "contact_zoom_lv": "13",
+          "contact_scroll": false,
+          "enable_contact_address": true,
+          "address_html": "<div class=\"address-info-location address-info-item\">\n\t<span>\tCHIC House, KN 82 st. Kigali, Rwanda <\/span>\n<\/div>\n<div class=\"address-info-phone address-info-item\">\n\t<span>Support:(+250) 788 848 600 <\/span>\n<\/div>\n<div class=\"address-info-email address-info-item\">\n\t<span> Email: <a href=\"mailto:info@dashbuy.rw\">info@dashbuy.rw<\/a> <\/span>\n<\/div>\n<div class=\"address-info-hours address-info-item\">\n\t<h3>Opening Hours<\/h3>\n\t<span> Monday to Friday: 9am-9pm <\/span>\n\t<span> Saturday to Sunday: 9am-11pm <\/span>\n<\/div>"
         }
       }
     },
