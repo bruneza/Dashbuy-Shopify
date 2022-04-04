@@ -760,7 +760,7 @@
             "type": "page",
             "settings": {
               "page_title": "Shipping & Returns",
-              "page": "shipping-return"
+              "page": "delivery-policy"
             }
           },
           "1555995267909": {
@@ -1079,7 +1079,7 @@
             "type": "page",
             "settings": {
               "page_title": "Shipping & Returns",
-              "page": "shipping-return"
+              "page": "delivery-policy"
             }
           }
         },
@@ -1133,7 +1133,7 @@
             "type": "page",
             "settings": {
               "page_title": "Shipping & Returns",
-              "page": "shipping-return"
+              "page": "delivery-policy"
             }
           }
         },
@@ -1181,7 +1181,7 @@
             "type": "page",
             "settings": {
               "page_title": "Shipping & Return",
-              "page": "shipping-return"
+              "page": "delivery-policy"
             }
           }
         },
